@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>お問い合わせ</title>
+        <link rel='stylesheet' href='css/style.css'>
+    </head>
+    <body>
+
+            <div>
+                <div class="header">
+                </div>
+
+                <div class="container">
+                    <h2>資料請求する</h2>
+                    <p>資料請求は無料です。<br>フォームに必要事項を入力し、資料請求ボタンを押してください。</p>
+
+                    <div class="form-content warning hide" id="warn0">
+                        <div id="warn1" class="hide">
+                            <span>会社名は必須です。</span>
+                        </div>
+                        <div id="warn2" class="hide">
+                            <span>ご担当者様は必須です。</span>
+                        </div>
+                        <div id="warn3" class="hide">
+                            <span>メールアドレスは必須です。</span>
+                        </div>
+                        <div id="warn4" class="hide">
+                            <span>メールアドレスには正しい形式のメールアドレスを指定してください。</span>
+                        </div>
+                        <div id="warn5" class="hide">
+                            <span>規約に同意をお願いします。</span>
+                        </div>
+                    </div>
+
+                    <div class="form-content">
+                        <label class="label">会社名<span class="tag">必須</span></label><br>
+                        <input type="text" id="corporate" name="corporate" value="" placeholder="会社名" class="form-text" required/>
+                    </div>
+                    <div class="form-content">
+                        <label class="label">ご担当者様<span class="tag">必須</span></label><br>
+                        <input type="text" id="name" name="name" value="" placeholder="山田太郎" class="form-text" required/>
+                    </div>
+                    <div class="form-content">
+                        <label class="label">メールアドレス<span class="tag">必須</span></label><br>
+                        <input type="email" id="mail" name="mail" value="" placeholder="example@gmail.com" class="form-text" required/>
+                    </div>
+                    <div class="form-content">
+                        <label class="label">電話番号<span class="tag any">任意</span></label><br>
+                        <input type="number" id="phone" name="phone" value="" placeholder="09012345678" class="form-text"/>
+                    </div>
+                    <div class="form-content">
+                        <label class="label">お問い合わせ<span class="tag any">任意</span></label><br>
+                        <textarea type="text" id="contact" value="" name="contact" class="form-text">
+                        </textarea>
+                    </div>
+                    <div class="form-content">
+                        <label class="label">規約に同意する<span class="tag">必須</span></label><br>
+                        <label class="form-text">
+                            <input type="checkbox" class="check" id="agree" name="agree" value=""/>
+                            <span>同意する</span><br>
+                        </label>
+                    </div>
+                    <div class="small">
+                        <span>以下の規約に同意の上チェックしてください。</span><br>
+                        <a href="https://www.yahoo.co.jp/" target="_blank" rel="noopener noreferrer">個人情報保護方針</a>
+                    </div>
+                    <div class="form-content submit" id="submit-text">
+                        送信
+                    </div>
+                </div>
+
+                <div class="footer">
+                    footer footer footer footer footer footer footer <br>
+                    footer footer footer footer footer footer footer
+                <div>
+                
+            </div>
+
+   
+        <script src="js/main.js"></script>
+    </body>
+</html>

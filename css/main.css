@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+}
+.following-header {
+    height: 58px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 5;
+    padding: 10px;
+}
+.sub-header {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100%;
+}
+.logo {
+    height: 48px;
+    width: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/siteLogo.png");
+}
+.center {
+    width: 30%;
+}
+.contact {
+    width: 30%;
+
+}
+.contact a{
+    background-color: #1e90ff;
+    text-decoration: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 15px;
+}
+.main-header {
+    background-image: url("../img/mainBg.jpg");
+    height: calc(60vh - 58px);
+    width: 100%;
+    padding-top: 78px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+}
+.main-header-content {
+    margin: 100px;
+}
+.logotext {
+    font-size: 18px;
+    font-weight: 500;
+    animation: fadeIn 3s ease 0.3s 1 normal;
+}
+.main-header-content h2 {
+    font-size: 62px;
+    color: #009966;
+    padding: 15px 0;
+    animation: fadeIn 3s ease 0.3s 1 normal;
+}
+.footnote {
+    font-size: 24px;
+    opacity: 0.7;
+    animation: fadeIn 3s ease 0.3s 1 normal;
+}
+.overview {
+    text-align: center;
+    height: 40vh;
+    width: 100%;
+    padding: 50px 0;
+    background: -webkit-linear-gradient(45deg, aliceblue, #BAD3FF); 
+}
+.overview-content {
+    height: 100%;
+}
+.overview-content h2 {
+    padding-top: 30px;
+}
+.overview-content p {
+    padding-top: 35px;
+    line-height: 200%;
+    opacity: 0.7;
+    font-size: 14px;
+}
+.explain {
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+}
+.overview-wrap {
+    display: flex;
+    justify-content: center;
+}
+.overview-wrap div{
+    margin: 0 15px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 15px;
+    box-shadow: 2px 2px 4px gray;
+    font-size: 14px;
+    line-height: 180%;
+    width: 15%;
+}
+.overview-wrap span {
+    color: blue;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, 30px);
+    };
+    100% {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 480px) {
+    .main-header-content {
+        margin: 100px 20px;
+    }
+    .logotext {
+        font-size: 14px;
+        font-weight: 500;
+        animation: fadeIn 3s ease 0.3s 1 normal;
+    }
+    .main-header-content h2 {
+        font-size: 42px;
+        color: #009966;
+        padding: 15px 0;
+        animation: fadeIn 3s ease 0.3s 1 normal;
+    }
+    .footnote {
+        font-size: 20px;
+        opacity: 0.7;
+        animation: fadeIn 3s ease 0.3s 1 normal;
+    }
+    .overview-content {
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
