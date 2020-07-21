@@ -36,7 +36,7 @@
             // メール送信APIにPOST送信
 
             // 送信後送信完了画面に遷移
-            window.location.href = 'complete.html';
+            window.location.href = 'contact-after.html';
         }
 
         if (!warn1) {
