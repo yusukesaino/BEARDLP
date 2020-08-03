@@ -43,6 +43,7 @@
     display: flex;
     justify-content: center; 
     align-items: center;
+    margin: 0 auto;
 }
 .mail-img {
     height: 18px;
@@ -451,6 +452,60 @@
 .pc-none {
     display: none;
 }
+/* TB */
+@media screen and (max-width: 896px) {
+    /* section class="main-header" */
+    .main-header {
+        height: 40vh;
+        background-size: 100% 100%;
+    }
+    /* section class="overview" */
+    .overview {
+        padding: 20px 0;
+    }
+    .content {
+        padding: 40px 0;
+        width: 72%;
+    }
+    .overview-wrap div{
+        width: 25%;
+    }
+    /* section class="explain" */
+    .explain {
+        padding-top: 100px;
+    }
+    .explain-content {
+        width: 80%;
+    }
+    .tb-none {
+        display: none;
+    }
+    /* section class="flow */
+    .tb-content {
+        width: 90%;
+    }
+    .flow-img {
+        background-image: url("../img/flow-tb-img.png");
+    }
+    /* section class="custom" */
+    .custom-box-text {
+        margin: 10px auto;
+    }
+    .custom-box-img {
+        width: 94%;
+        background-size: 100% 100%;
+    }
+    /* section class="interface" */
+    /* section class="performance" */
+    .performance-content-img {
+        width: 90%;
+    }
+
+
+
+
+
+}
 
 /* SP */
 @media screen and (max-width: 480px) {
@@ -565,6 +620,35 @@
         background-repeat: no-repeat;
         background-position: center;
         background-image: url("../img/flow-sp.png");
+    }
+    /* section class="custom" */
+    .custom {
+        height: auto;
+        width: 100%;
+    }
+    .custom-box {
+        border-radius: 0;
+        background: #DEEFEC; 
+    }
+    .custom-sp-content {
+        width: 100%;
+    }
+    .custom-sp-content-text {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .cb-img1 {
+        height: 125px;
+        background-size: 100% 100%;
+        background-image: url("../img/custom-sp.png");
+    }
+    .cb-img2 {
+        height: 350px;
+        background-size: 100% 100%;
+        background-image: url("../img/custom-sp1.png");
+    }
+    .custom-box-text {
+        margin: 0 auto;
     }
     /* section class="interface" */
     .interface {
