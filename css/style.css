@@ -4,8 +4,9 @@
 }
 .header {
     width: 100%;
-    height: 160px;
-    background-image: url(../img/mainBg.jpg);
+    height: 140px;
+    /* background: -webkit-linear-gradient(45deg, #DEEFEC, #006B6D);  */
+    background-color: #006B6D;
     background-size: 100% 100%;
 }
 .container {
@@ -14,11 +15,12 @@
     margin: 35px auto;
 }
 .container h2 {
-    font-weight: normal;
+    font-weight: 600;
     font-size: 30px;
-    color: #00a591;
+    color: #006B6D;
 }
 .container p {
+    font-size: 18px;
     margin-top: 10px;
     padding: 20px 0;
 }
@@ -98,7 +100,7 @@ input[type="checkbox"]:checked + span::before {
     text-decoration: underline;
 }
 .submit {
-    background-color: #00a591;
+    background-color: #006B6D;
     color: white;
     text-align: center;
     border-radius: 3px;
@@ -109,7 +111,7 @@ input[type="checkbox"]:checked + span::before {
     cursor: pointer;
 }
 .footer {
-    margin: 40px 0 10px 0;
+    margin: 60px 0 0px 0;
     text-align: center;
     font-size: 12px;
     color: #90A4AE;
@@ -118,8 +120,8 @@ input[type="checkbox"]:checked + span::before {
     content: '';
     width: 32px;
     height: 16px;
-    border-left: 3px solid #00a591;
-    border-bottom: 3px solid #00a591;
+    border-left: 3px solid #006B6D;
+    border-bottom: 3px solid #006B6D;
     transform: rotate(-45deg);
     display: inline-block;
     margin: 34px 0 17px 0;
@@ -148,7 +150,13 @@ input[type="checkbox"]:checked + span::before {
 .hide {
     display: none;
 }
+.pc-none1 {
+    display: none;
+}
 @media screen and (max-width: 480px) {
+    .header {
+        height: 80px;
+    }
     .container {
         width: 90%;
         text-align: center;
@@ -157,14 +165,14 @@ input[type="checkbox"]:checked + span::before {
     .container h2 {
         font-weight: normal;
         font-size: 26px;
-        color: #00a591;
+        color: #006B6D;
     }
     .form-content {
         margin: 20px auto 15px auto;
         text-align: left;
     }
     .submit {
-        background-color: #00a591;
+        background-color: #006B6D;
         color: white;
         text-align: center;
         border-radius: 3px;
@@ -173,5 +181,8 @@ input[type="checkbox"]:checked + span::before {
         font-size: 20px;
         line-height: 150%;
         cursor: pointer;
+    }
+    .pc-none1 {
+        display: inherit;
     }
 }
